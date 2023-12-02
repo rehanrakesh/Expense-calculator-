@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+}
+
+.expenseBody {
+    width: 50%;
+    max-width: 750px;
+    margin: 0 auto;
+    box-shadow: rgba(125, 125, 131, 0.87) 0px 7px 29px 0px;
+}
+
+.title {
+    color: rgba(0, 0, 0, 0.687);
+    margin: 3% 0;
+    text-align: center;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 37px;
+    font-weight: 600;
+}
+
+.redTitle {
+    color: red;
+}
+
+.greenTitle {
+    color: #2c974b;
+}
+
+.content {
+    background-color: white;
+    padding: 50px 100px;
+}
+
+.secondTitle {
+    margin: 20px 0;
+    font-size: 25px;
+    color: tomato;
+}
+
+.form {
+    padding: 5px;
+}
+
+.formLine {
+    display: flex;
+    gap: 10px;
+}
+
+.secFormLine {
+    gap: 23px;
+}
+
+input,
+select {
+    outline: none;
+    /* border: none; */
+    border-radius: 3px;
+    padding: 5px 8px;
+    width: 200px;
+    height: 35px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#expForm {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.formBody {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.firstRow,
+.secondRow {
+    display: flex;
+    gap: 30px;
+}
+
+button {
+    text-align: center;
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #2c974b;
+}
+
+
+/* table style */
+table {
+    width: 100%;
+    text-align: center;
+}
+
+thead {
+    line-height: 35px;
+    background-color: #2ea44f;
+    color: white;
+}
+
+.deleteButton {
+    color: red;
+}
+
+.centerElement {
+    text-align = center;
+ }
+
+/* Button */
+
+.formBtn {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* Media Quries */
+
+@media screen and (max-width:1464px) {
+    .expenseBody {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    .expenseBody {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .expenseBody {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .content {
+        padding: 50px 20px;
+    }
+
+    .firstRow,
+    .secondRow {
+        gap: 0;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:650px) {
+
+    .firstRow,
+    .secondRow {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .secFormLine {
+        gap: 10px;
+    }
+
+    input,
+    select {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    input,
+    select {
+        width: 200px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+}
